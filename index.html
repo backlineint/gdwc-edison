@@ -5,11 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit-Element App</title>
-    <script type="module" src="/src/my-element.js"></script>
+    <script type="module" src="/src/gdwc-eds-navigation.js"></script>
+    <style>
+      body {
+        font-family: Montserrat, Verdana, sans‑serif;
+      }
+    </style>
   </head>
   <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+    <h1>Generic Drupal Menu Web Component + Vaadin Menu Bar = 😍</h1>
+    <gdwc-vaadin-menu-bar branding="main" baseUrl="https://decoupled-menus.jsonapi.dev" menuId="main"></gdwc-vaadin-menu-bar>
+    <gdwc-vaadin-menu-bar branding="drupal-wiki" baseUrl="https://decoupled-menus.jsonapi.dev" menuId="drupal-wiki"></gdwc-vaadin-menu-bar>
+    <gdwc-vaadin-menu-bar branding="account" baseUrl="https://decoupled-menus.jsonapi.dev" menuId="account"></gdwc-vaadin-menu-bar>
   </body>
 </html>
